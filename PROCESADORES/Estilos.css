@@ -1,0 +1,214 @@
+/* Estilos globales para restablecer márgenes y rellenos, y ajustar el modelo de caja */
+* {
+    margin: 0; /* Elimina márgenes predeterminados en todos los elementos */
+    padding: 0; /* Elimina rellenos predeterminados en todos los elementos */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho y alto total del elemento */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente de texto para toda la página */
+    background: linear-gradient(black, rgb(61, 59, 59), rgb(63, 58, 58)); /* Establece un fondo degradado que va de negro a tonos gris oscuros */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: linear-gradient(black, rgb(31, 34, 36), rgb(90, 140, 173)); /* Degradado de color de fondo para el encabezado */
+    color: white; /* Color del texto en el encabezado */
+    padding: 20px; /* Espacio interno alrededor del contenido del encabezado */
+}
+
+/* Estilos para la navegación dentro del encabezado */
+nav {
+    display: flex; /* Utiliza Flexbox para organizar los elementos en una fila */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos al centro del contenedor */
+}
+
+/* Estilos para el contenedor del logo y nombre de la empresa */
+.logo-container {
+    display: flex; /* Utiliza Flexbox para alinear el logo y el nombre en una fila */
+    align-items: center; /* Alinea verticalmente el logo y el nombre al centro del contenedor */
+}
+
+/* Estilos para la imagen del logo */
+.logo img {
+    width: 150px; /* Define el ancho del logo */
+    height: 150px; /* Define la altura del logo */
+}
+
+/* Estilos para el nombre de la empresa */
+span{
+    color: yellow; /* Cambia el color del texto dentro del <span> a amarillo */
+}
+
+.company-name {
+    font-size: 75px; /* Tamaño de la fuente para el nombre de la empresa */
+    color: white; /* Color del texto del nombre de la empresa */
+    margin-left: 20px; /* Espacio a la izquierda del nombre de la empresa */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex; /* Utiliza Flexbox para organizar los enlaces en una fila */
+    margin-left: 200px; /* Espacio a la izquierda de los enlaces de navegación */
+}
+
+.nav-links a {
+    margin-left: 100px; /* Espacio a la izquierda de cada enlace de navegación */
+    color: white; /* Color del texto de los enlaces de navegación */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size:40PX; /* Tamaño de la fuente para los enlaces de navegación */
+}
+
+/* Estilos para la sección principal de contenido */
+main {
+    padding: 40px 20px; /* Espacio interno alrededor del contenido principal */
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor principal horizontalmente */
+}
+/* Estilos para la sección de ofertas */
+.offers {
+    margin-bottom: 40px; /* Espacio debajo de la sección de ofertas */
+
+}
+
+.offers h1 {
+    text-align: center; /* Centra el texto del encabezado de ofertas */
+    font-size: 2.5em; /* Tamaño de la fuente para el título de ofertas */
+    margin-bottom: 20px; /* Espacio debajo del título de ofertas */
+    color: #FF5733; /* Color del texto del título de ofertas */
+}
+
+/* Estilos para la cuadrícula de productos */
+.product-grid {
+    display: grid; /* Utiliza el diseño de cuadrícula para organizar los productos */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Crea columnas automáticas con un tamaño mínimo de 150px y máximo de 1fr */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para cada ítem del producto */
+.product-item {
+    background-color: #f4f4f4; /* Color de fondo para cada ítem del producto */
+    padding: 20px; /* Espacio interno alrededor del contenido del ítem del producto */
+    text-align: center; /* Centra el texto dentro del ítem del producto */
+    border-radius: 8px; /* Bordes redondeados para los ítems del producto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para los ítems del producto */
+}
+
+.product-item img {
+    width: 100px; /* Ancho de las imágenes del producto */
+    height: 100px; /* Altura de las imágenes del producto */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin deformarse */
+    margin-bottom: 10px; /* Espacio debajo de la imagen del producto */
+}
+
+.product-item p {
+    font-size: 1em; /* Tamaño de la fuente para los descripciones del producto */
+    color: #333; /* Color del texto para las descripciones del producto */
+}
+
+.product-item p:last-child {
+    font-weight: bold; /* Pone en negrita el último párrafo en cada ítem del producto */
+    color: #FF5733; /* Color del texto para el precio del producto */
+}
+
+/* Estilos para los formularios */
+.forms {
+    display: flex; /* Utiliza Flexbox para organizar los formularios en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los formularios */
+    gap: 20px; /* Espacio entre los formularios */
+}
+
+/* Estilos para cada contenedor de formulario */
+.form-container {
+    width: 48%; /* Ancho de cada contenedor de formulario */
+    background-color: #f4f4f4; /* Color de fondo para los contenedores de formulario */
+    padding: 20px; /* Espacio interno alrededor del contenido del formulario */
+    border-radius: 8px; /* Bordes redondeados para los contenedores de formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para los contenedores de formulario */
+}
+
+/* Estilos para el encabezado de cada formulario */
+.form-container h2 {
+    text-align: center; /* Centra el texto del encabezado del formulario */
+    margin-bottom: 20px; /* Espacio debajo del encabezado del formulario */
+    font-size: 1.8em; /* Tamaño de la fuente para el encabezado del formulario */
+    color: #333; /* Color del texto del encabezado del formulario */
+}
+
+/* Estilos para los elementos del formulario */
+form {
+    display: flex; /* Utiliza Flexbox para organizar los elementos del formulario en una columna */
+    flex-direction: column; /* Organiza los elementos en una columna vertical */
+}
+
+/* Estilos para las etiquetas de los formularios */
+label {
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas de los formularios */
+    font-weight: bold; /* Pone en negrita el texto de las etiquetas */
+    color: #333; /* Color del texto de las etiquetas */
+}
+
+/* Estilos para los campos de entrada y selección de los formularios */
+input, select {
+    margin-bottom: 15px; /* Espacio debajo de cada campo de entrada y selección */
+    padding: 10px; /* Espacio interno dentro de los campos */
+    border: 1px solid #ccc; /* Borde delgado y gris para los campos */
+    border-radius: 4px; /* Bordes redondeados para los campos */
+    font-size: 1em; /* Tamaño de la fuente dentro de los campos */
+}
+
+/* Estilos para el botón de envío del formulario */
+input[type="submit"] {
+    background-color: #FF5733; /* Color de fondo para el botón de envío */
+    color: white; /* Color del texto del botón de envío */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    padding: 15px; /* Espacio interno alrededor del texto del botón */
+    text-transform: uppercase; /* Convierte el texto del botón a mayúsculas */
+    font-weight: bold; /* Pone en negrita el texto del botón */
+}
+
+/* Estilos para el botón de envío cuando se pasa el ratón sobre él */
+input[type="submit"]:hover {
+    background-color: #ff4522; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+/* Estilos para los enlaces dentro de los formularios */
+a {
+    color: #FF5733; /* Color del texto para los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 0.9em; /* Tamaño de la fuente para los enlaces */
+    text-align: center; /* Centra el texto del enlace */
+    display: block; /* Hace que el enlace ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espacio arriba del enlace */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 20px; /* Espacio interno alrededor del contenido del pie de página */
+    text-align: center; /* Centra el texto del pie de página */
+    margin-top: 40px; /* Espacio arriba del pie de página */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-media img {
+    width: 30px; /* Ancho de los iconos de redes sociales */
+    margin: 0 10px; /* Espacio horizontal alrededor de cada icono */
+}
+.social-media {
+    text-align: center; /* Centra los iconos en el contenedor */
+}
+
+.social-media a {
+    display: inline-block; /* Alinea los iconos horizontalmente */
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.social-media img {
+    width: 40px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+}
